@@ -1,0 +1,16 @@
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\[Compi1]Proyecto2.exe.config
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\[Compi1]Proyecto2.exe
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\[Compi1]Proyecto2.pdb
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\FastColoredTextBox.dll
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\GraphVizWrapper.dll
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\Irony.dll
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\Irony.pdb
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\bin\Release\FastColoredTextBox.xml
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\[Compi1]Proyecto2.csprojAssemblyReference.cache
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\_Compi1_Proyecto2.MyGui.ImageDisplay.resources
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\_Compi1_Proyecto2.MyGui.MainForm.resources
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\_Compi1_Proyecto2.Properties.Resources.resources
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\[Compi1]Proyecto2.csproj.GenerateResource.cache
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\[Compi1]Proyecto2.csproj.CopyComplete
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\[Compi1]Proyecto2.exe
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Compi1\Proyecto2\src\[Compi1]Proyecto2\[Compi1]Proyecto2\obj\Release\[Compi1]Proyecto2.pdb

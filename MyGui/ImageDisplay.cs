@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _Compi1_Proyecto2.MyGui
+{
+    public partial class ImageDisplay : Form
+    {
+        public ImageDisplay(string title, Image img)
+        {
+            InitializeComponent();
+            this.Text = title;
+            pictureBox1.Image = img;
+        }
+    }
+}

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D6E13C3-7A20-4F5B-9F71-5204C8F482C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_Compi1_Proyecto2</RootNamespace>
+    <AssemblyName>[Compi1]Proyecto2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\FastColoredTextBox-master\Binary\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphVizWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphViz.NET.1.0.0\lib\net40\GraphVizWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Graphviz\DotCompiler.cs" />
+    <Compile Include="Graphviz\DotUtilities.cs" />
+    <Compile Include="MyGui\ImageDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyGui\ImageDisplay.Designer.cs">
+      <DependentUpon>ImageDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGui\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyGui\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGui\PyTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PyUsac\Ast\Base\AstNode.cs" />
+    <Compile Include="PyUsac\Ast\Base\EnumTypes.cs" />
+    <Compile Include="PyUsac\Ast\Base\PyAstBuilder.cs" />
+    <Compile Include="PyUsac\Ast\Base\PyPath.cs" />
+    <Compile Include="PyUsac\Ast\Base\TransientNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Expressions\ArrayExpr.cs" />
+    <Compile Include="PyUsac\Ast\Node\Expressions\AtomicExpr.cs" />
+    <Compile Include="PyUsac\Ast\Node\Oop\FunctionNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Oop\ImportNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Oop\ProgramNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\Block.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\DoWhileNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\ForNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\IfNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\SwitchLabelNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\SwitchNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Control\WhileNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Jumpers\BreakNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Jumpers\ContinueNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Jumpers\ReturnNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\Assignment.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\Declaration.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\ExprAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\ObjectCreationAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\ProcedureAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\IdentifierAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\IndexAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Natives\Alert.cs" />
+    <Compile Include="PyUsac\Ast\Node\Expressions\BinaryExpr.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Natives\Graph.cs" />
+    <Compile Include="PyUsac\Ast\Node\Expressions\IncDecExpr.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\MemoryReadWrite\MemberAccess.cs" />
+    <Compile Include="PyUsac\Ast\Node\Stmt\Natives\LogNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Expressions\UnaryExpr.cs" />
+    <Compile Include="PyUsac\Ast\Node\Oop\ClassNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Oop\MethodNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\BooleanLiteralNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\CharLiteralNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\IdentifierNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\NullLiteralNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\NumberLiteralNode.cs" />
+    <Compile Include="PyUsac\Ast\Node\Terminal\StringLiteralNode.cs" />
+    <Compile Include="PyUsac\Interfaces\IAstVisitor.cs" />
+    <Compile Include="PyUsac\Interfaces\IVisitableNode.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\BaseVisitor.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\ControlStack.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\StaticEntity.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\StaticVisitor.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\ErrorHelper.cs" />
+    <Compile Include="PyUsac\Interpreter\AstWalker\InstanceVisitor.cs" />
+    <Compile Include="PyUsac\Interpreter\Memory\Scope.cs" />
+    <Compile Include="PyUsac\Interpreter\Memory\SymbolTable.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\Jumpers\Breaker.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\Jumpers\Continue.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\Jumpers\Jumper.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\Jumpers\Return.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\CreationSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\ExprSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\ProcedureSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\IdentifierSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\IndexSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\MemberSegment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MemberSegments\Segment.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\SwitchLabels\SwitchLabel.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\MemoryBlock.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Oop\ClassDefinition.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Custom\ClassInstance.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Oop\Definition.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Oop\Function.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Oop\Method.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Oop\Procedure.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Collections\MyArray.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Collections\MyArrayFactory.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\ControlTypes\MyError.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\MyNull.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyBoolean.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyChar.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyDouble.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyInt.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\PyObj.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyPrimitive.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyPrimitiveFactory.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Primitives\MyString.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\BoolOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\CharOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\CustomInstanceOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\DoubleOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\IntOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\IOperates.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\NullOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\PyUsacTypes\Strategies\StringOperation.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Utilities\TypeConstants.cs" />
+    <Compile Include="PyUsac\Interpreter\MyDataType\Word.cs" />
+    <Compile Include="PyUsac\Interpreter\RuntimeEnvironment\DelegateMethods.cs" />
+    <Compile Include="PyUsac\Interpreter\RuntimeEnvironment\Console.cs" />
+    <Compile Include="PyUsac\Interpreter\RuntimeEnvironment\Logger.cs" />
+    <Compile Include="PyUsac\Interpreter\RuntimeEnvironment\MySystem.cs" />
+    <Compile Include="PyUsac\Parser\PyUsacGrammar.cs" />
+    <Compile Include="PyUsac\PyUsacEntry.cs" />
+    <EmbeddedResource Include="MyGui\ImageDisplay.resx">
+      <DependentUpon>ImageDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyGui\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileManager\" />
+    <Folder Include="res\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Irony\010.Irony.csproj">
+      <Project>{943AD2FC-DB1E-42DB-910C-54B176416C8F}</Project>
+      <Name>010.Irony</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
